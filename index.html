@@ -131,13 +131,19 @@
   @media(max-width:760px){.feat .card{grid-template-columns:1fr}.feat .card .visual{order:-1 !important;border:0 !important;border-bottom:1px solid var(--border) !important;min-height:170px}.feat .card .body{padding:28px}}
 
   /* OTHER GRID */
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
-  .mini{padding:26px;display:flex;flex-direction:column;gap:12px;min-height:190px}
-  .mini .top{display:flex;align-items:center;justify-content:space-between}
-  .mini .ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--bg-2);border:1px solid var(--border);color:var(--accent)}
-  .mini h4{font-size:1.12rem;letter-spacing:-.01em}
+  .cat{margin-top:52px}
+  .cat-head{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+  .cat-head h3{font-size:1.15rem;letter-spacing:-.01em;white-space:nowrap}
+  .cat-head .cnt{font-size:12px;font-weight:600;color:var(--faint);border:1px solid var(--border);border-radius:999px;padding:3px 10px}
+  .cat-head::after{content:"";flex:1;height:1px;background:var(--border)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .mini{padding:24px;display:flex;flex-direction:column;gap:11px;min-height:186px}
+  .mini h4{font-size:1.1rem;letter-spacing:-.01em}
   .mini p{color:var(--muted);font-size:.92rem;flex:1}
+  .mini .foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:6px}
   .mini .lang{font-size:12px;color:var(--faint);font-weight:600;letter-spacing:.03em}
+  .mini .lk{font-size:13px;font-weight:600;color:var(--text);display:inline-flex;align-items:center;gap:5px;transition:.2s}
+  .mini .lk:hover{color:var(--accent)}
   @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:560px){.grid{grid-template-columns:1fr}}
 
@@ -248,37 +254,102 @@
         </article>
       </div>
 
-      <div class="grid">
-        <article class="card mini reveal">
-          <div class="top"><h4>Log Threat Analyzer</h4></div>
-          <p>Parses authentication logs and flags brute-force and password-spray patterns, with structured JSON reports.</p>
-          <span class="lang">JavaScript · Node.js</span>
-        </article>
-        <article class="card mini reveal">
-          <div class="top"><h4>taskflow-api</h4></div>
-          <p>A dependency-light Node REST API with authentication, task management, persistence, and tests.</p>
-          <span class="lang">Node.js · REST</span>
-        </article>
-        <article class="card mini reveal">
-          <div class="top"><h4>RBAC Access API</h4></div>
-          <p>A role-based access-control API demonstrating authorization decisions, with a full test suite.</p>
-          <span class="lang">JavaScript</span>
-        </article>
-        <article class="card mini reveal">
-          <div class="top"><h4>File Integrity Monitor</h4></div>
-          <p>Computes SHA-256 baselines across directories and detects unauthorized changes on later scans.</p>
-          <span class="lang">Node.js · SHA-256</span>
-        </article>
-        <article class="card mini reveal">
-          <div class="top"><h4>Linux Permission Auditor</h4></div>
-          <p>Recursively audits Linux file permissions against a configurable policy, flagging privilege-escalation risks.</p>
-          <span class="lang">C++ · POSIX</span>
-        </article>
-        <article class="card mini reveal">
-          <div class="top"><h4>Snake Game</h4></div>
-          <p>A browser game on HTML5 Canvas with live score tracking and keyboard controls.</p>
-          <span class="lang">JavaScript · Canvas</span>
-        </article>
+      <!-- Full-stack & APIs -->
+      <div class="cat reveal">
+        <div class="cat-head"><h3>Full-Stack &amp; APIs</h3><span class="cnt">Node · REST</span></div>
+        <div class="grid">
+          <article class="card mini">
+            <h4>TaskFlow API</h4>
+            <p>A Node.js REST API with authentication, task and project endpoints, validation, persistence, and automated tests.</p>
+            <div class="foot"><span class="lang">Node.js · REST</span><a class="lk" href="https://github.com/rmayen/taskflow-api" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>RBAC Access API</h4>
+            <p>A role-based access-control API demonstrating authorization decisions, backed by a full test suite.</p>
+            <div class="foot"><span class="lang">JavaScript</span><a class="lk" href="https://github.com/rmayen/rbac-access-control-api" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Security & tooling -->
+      <div class="cat reveal">
+        <div class="cat-head"><h3>Security &amp; Developer Tooling</h3><span class="cnt">5 tools</span></div>
+        <div class="grid">
+          <article class="card mini">
+            <h4>Log Threat Analyzer</h4>
+            <p>Parses authentication logs and flags brute-force and password-spray patterns, with structured JSON reports.</p>
+            <div class="foot"><span class="lang">JavaScript</span><a class="lk" href="https://github.com/rmayen/log-threat-analyzer" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>File Integrity Monitor</h4>
+            <p>Computes SHA-256 baselines across directories and detects unauthorized changes on later scans.</p>
+            <div class="foot"><span class="lang">Node.js · SHA-256</span><a class="lk" href="https://github.com/rmayen/file-integrity-monitor" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>HTTP Security Header Auditor</h4>
+            <p>Audits a site's HTTP security headers and generates JSON reports, backed by tests.</p>
+            <div class="foot"><span class="lang">JavaScript</span><a class="lk" href="https://github.com/rmayen/http-security-header-auditor" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>Linux Permission Auditor</h4>
+            <p>Recursively audits Linux file permissions against a configurable policy, flagging privilege-escalation risks.</p>
+            <div class="foot"><span class="lang">C++ · POSIX</span><a class="lk" href="https://github.com/rmayen/linux-permission-auditor" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>Network Packet Parser</h4>
+            <p>Parses packet metadata into protocol summaries and flags suspicious traffic patterns.</p>
+            <div class="foot"><span class="lang">C++</span><a class="lk" href="https://github.com/rmayen/network-packet-parser" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Systems -->
+      <div class="cat reveal">
+        <div class="cat-head"><h3>Systems Programming</h3><span class="cnt">C / C++</span></div>
+        <div class="grid">
+          <article class="card mini">
+            <h4>Mini Shell</h4>
+            <p>A cross-platform C++ shell with built-in commands, history, directory management, and external command execution.</p>
+            <div class="foot"><span class="lang">C++</span><a class="lk" href="https://github.com/rmayen/mini-shell" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>Process Scheduler Simulator</h4>
+            <p>Simulates FCFS, SJF, and round-robin CPU scheduling and computes per-process and average timing metrics.</p>
+            <div class="foot"><span class="lang">C++</span><a class="lk" href="https://github.com/rmayen/process-scheduler-sim" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>Memory Allocator Simulator</h4>
+            <p>A first-fit memory allocator modeling allocation, freeing, and fragmentation statistics.</p>
+            <div class="foot"><span class="lang">C++</span><a class="lk" href="https://github.com/rmayen/memory-allocator-sim" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>Store Management System</h4>
+            <p>A C++ store system with user authentication, inventory management, a shopping cart, and checkout.</p>
+            <div class="foot"><span class="lang">C++</span><a class="lk" href="https://github.com/rmayen/store-management-app" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Apps & games -->
+      <div class="cat reveal">
+        <div class="cat-head"><h3>Apps &amp; Games</h3><span class="cnt">Just for fun</span></div>
+        <div class="grid">
+          <article class="card mini">
+            <h4>Discord Music Bot</h4>
+            <p>A Java Discord bot using JDA and LavaPlayer for playback controls, queue handling, and server interaction.</p>
+            <div class="foot"><span class="lang">Java · JDA</span><a class="lk" href="https://github.com/rmayen/discord-music-bot" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>Discord Utility Bot</h4>
+            <p>A multi-purpose bot built with Discord.js v14 — slash commands, server info, dice rolls, and more.</p>
+            <div class="foot"><span class="lang">Discord.js</span><a class="lk" href="https://github.com/rmayen/discord-utility-bot" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>Snake Game</h4>
+            <p>A browser game on HTML5 Canvas with live score tracking and keyboard controls.</p>
+            <div class="foot"><span class="lang">JavaScript · Canvas</span><a class="lk" href="https://github.com/rmayen/js-snake-game" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+        </div>
       </div>
     </div>
   </section>
