@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rene Mayen — Full-stack & Front-end Developer</title>
-<meta name="description" content="Rene Mayen — full-stack and front-end developer. Computer Science at UMBC. I care about craft, performance, and accessibility.">
+<title>Rene Mayen — Software Developer & Cybersecurity</title>
+<meta name="description" content="Rene Mayen — full-stack developer and cybersecurity student at UMBC. I build web apps and security tooling, with craft, performance, and accessibility.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -194,9 +194,9 @@
   <section class="hero" id="hero" style="padding-top:170px">
     <div class="blob b1"></div><div class="blob b2"></div>
     <div class="wrap hero-in">
-      <span class="pill"><span class="live"></span> Available for front-end &amp; full-stack roles</span>
-      <h1>I build software that's <em class="grad">solid underneath</em> and considered on the surface.</h1>
-      <p class="lead">I'm Rene — a <b>full-stack &amp; front-end developer</b> and Computer Science student at UMBC. I care about the details that make an interface feel right: <b>clean craft, real performance, and accessibility</b> — from the database to the pixel.</p>
+      <span class="pill"><span class="live"></span> Open to software, front-end &amp; security roles</span>
+      <h1>I build software that's <em class="grad">secure underneath</em> and considered on the surface.</h1>
+      <p class="lead">I'm Rene — a <b>full-stack developer and cybersecurity student</b> at UMBC. I build web apps and <b>security tooling</b> in equal measure, and I sweat the details that make software both trustworthy and a pleasure to use — <b>clean craft, real performance, and accessibility</b>.</p>
       <div class="cta-row">
         <a href="#work" class="btn primary">View my work
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -216,7 +216,7 @@
       <div class="reveal">
         <div class="eyebrow">Selected Work</div>
         <h2 class="sec-title">Things I've designed, built, and shipped.</h2>
-        <p class="sec-sub">A mix of full-stack products, front-ends, and developer tooling — all built and on GitHub.</p>
+        <p class="sec-sub">Full-stack products, front-ends, and security tooling in equal measure — all built and on GitHub.</p>
       </div>
 
       <div class="feat">
@@ -234,6 +234,17 @@
         <article class="card reveal">
           <div class="body">
             <span class="num">02</span>
+            <h3>Log Threat Analyzer</h3>
+            <p>A defensive tool that parses authentication logs and flags brute-force and password-spray attacks against configurable thresholds, then writes structured JSON reports of the suspicious accounts, source IPs, and attack windows it finds — built to slot into a real incident-response workflow.</p>
+            <div class="tags"><span class="tag">Node.js</span><span class="tag">Threat detection</span><span class="tag">Log analysis</span><span class="tag">Security</span></div>
+            <div class="links"><a href="https://github.com/rmayen/log-threat-analyzer" target="_blank" rel="noopener">View code <span class="arw">↗</span></a></div>
+          </div>
+          <div class="visual"><div class="glowline"></div><div class="mock">Threat<br>detection</div></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="body">
+            <span class="num">03</span>
             <h3>Construction Art LLC</h3>
             <p>A responsive marketing landing page for a remodeling business — a bold hero with a clear call-to-action, a services section, and a real project gallery, laid out to a simple, consistent brand. Live and deployed.</p>
             <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span><span class="tag">Landing page</span></div>
@@ -244,20 +255,47 @@
 
         <article class="card reveal">
           <div class="body">
-            <span class="num">03</span>
-            <h3>Weather Dashboard</h3>
-            <p>A responsive weather app that fetches live data from the OpenWeatherMap API and presents it in a focused, card-based interface — a small study in clean state handling and a search-first layout.</p>
-            <div class="tags"><span class="tag">JavaScript</span><span class="tag">REST API</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
-            <div class="links"><a href="https://github.com/rmayen/weather-dashboard" target="_blank" rel="noopener">View code <span class="arw">↗</span></a></div>
+            <span class="num">04</span>
+            <h3>File Integrity Monitor</h3>
+            <p>A defensive CLI that computes SHA-256 baselines across directory trees and flags unauthorized modifications, additions, and deletions on later scans — with JSON baseline persistence and human-readable diff reports for incident response.</p>
+            <div class="tags"><span class="tag">Node.js</span><span class="tag">SHA-256</span><span class="tag">Integrity</span><span class="tag">Security</span></div>
+            <div class="links"><a href="https://github.com/rmayen/file-integrity-monitor" target="_blank" rel="noopener">View code <span class="arw">↗</span></a></div>
           </div>
-          <div class="visual"><div class="glowline"></div><div class="mock">API-driven<br>UI</div></div>
+          <div class="visual"><div class="glowline"></div><div class="mock">Integrity<br>&amp; trust</div></div>
         </article>
       </div>
 
-      <!-- Full-stack & APIs -->
+      <!-- Security engineering -->
       <div class="cat reveal">
-        <div class="cat-head"><h3>Full-Stack &amp; APIs</h3><span class="cnt">Node · REST</span></div>
+        <div class="cat-head"><h3>Security Engineering</h3><span class="cnt">Defensive tooling</span></div>
         <div class="grid">
+          <article class="card mini">
+            <h4>Linux Permission Auditor</h4>
+            <p>Recursively audits Linux file permissions against a configurable policy, flagging world-writable files, SUID/SGID binaries, and other privilege-escalation risks.</p>
+            <div class="foot"><span class="lang">C++ · POSIX</span><a class="lk" href="https://github.com/rmayen/linux-permission-auditor" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>HTTP Security Header Auditor</h4>
+            <p>Audits a site's HTTP security headers and generates JSON reports of what's missing or misconfigured, backed by tests.</p>
+            <div class="foot"><span class="lang">JavaScript</span><a class="lk" href="https://github.com/rmayen/http-security-header-auditor" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="card mini">
+            <h4>Network Packet Parser</h4>
+            <p>Parses packet metadata into protocol summaries and flags suspicious traffic patterns for quick triage.</p>
+            <div class="foot"><span class="lang">C++</span><a class="lk" href="https://github.com/rmayen/network-packet-parser" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Web & APIs -->
+      <div class="cat reveal">
+        <div class="cat-head"><h3>Web &amp; APIs</h3><span class="cnt">Node · REST</span></div>
+        <div class="grid">
+          <article class="card mini">
+            <h4>Weather Dashboard</h4>
+            <p>A responsive weather app that fetches live data from the OpenWeatherMap API and presents it in a focused, card-based interface.</p>
+            <div class="foot"><span class="lang">JavaScript · API</span><a class="lk" href="https://github.com/rmayen/weather-dashboard" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
           <article class="card mini">
             <h4>TaskFlow API</h4>
             <p>A Node.js REST API with authentication, task and project endpoints, validation, persistence, and automated tests.</p>
@@ -267,38 +305,6 @@
             <h4>RBAC Access API</h4>
             <p>A role-based access-control API demonstrating authorization decisions, backed by a full test suite.</p>
             <div class="foot"><span class="lang">JavaScript</span><a class="lk" href="https://github.com/rmayen/rbac-access-control-api" target="_blank" rel="noopener">Code ↗</a></div>
-          </article>
-        </div>
-      </div>
-
-      <!-- Security & tooling -->
-      <div class="cat reveal">
-        <div class="cat-head"><h3>Security &amp; Developer Tooling</h3><span class="cnt">5 tools</span></div>
-        <div class="grid">
-          <article class="card mini">
-            <h4>Log Threat Analyzer</h4>
-            <p>Parses authentication logs and flags brute-force and password-spray patterns, with structured JSON reports.</p>
-            <div class="foot"><span class="lang">JavaScript</span><a class="lk" href="https://github.com/rmayen/log-threat-analyzer" target="_blank" rel="noopener">Code ↗</a></div>
-          </article>
-          <article class="card mini">
-            <h4>File Integrity Monitor</h4>
-            <p>Computes SHA-256 baselines across directories and detects unauthorized changes on later scans.</p>
-            <div class="foot"><span class="lang">Node.js · SHA-256</span><a class="lk" href="https://github.com/rmayen/file-integrity-monitor" target="_blank" rel="noopener">Code ↗</a></div>
-          </article>
-          <article class="card mini">
-            <h4>HTTP Security Header Auditor</h4>
-            <p>Audits a site's HTTP security headers and generates JSON reports, backed by tests.</p>
-            <div class="foot"><span class="lang">JavaScript</span><a class="lk" href="https://github.com/rmayen/http-security-header-auditor" target="_blank" rel="noopener">Code ↗</a></div>
-          </article>
-          <article class="card mini">
-            <h4>Linux Permission Auditor</h4>
-            <p>Recursively audits Linux file permissions against a configurable policy, flagging privilege-escalation risks.</p>
-            <div class="foot"><span class="lang">C++ · POSIX</span><a class="lk" href="https://github.com/rmayen/linux-permission-auditor" target="_blank" rel="noopener">Code ↗</a></div>
-          </article>
-          <article class="card mini">
-            <h4>Network Packet Parser</h4>
-            <p>Parses packet metadata into protocol summaries and flags suspicious traffic patterns.</p>
-            <div class="foot"><span class="lang">C++</span><a class="lk" href="https://github.com/rmayen/network-packet-parser" target="_blank" rel="noopener">Code ↗</a></div>
           </article>
         </div>
       </div>
@@ -361,13 +367,13 @@
       <h2 class="sec-title">A developer who sweats the details.</h2></div>
       <div class="about-grid reveal">
         <div>
-          <p>I'm a <b>Computer Science student at UMBC</b>, graduating in December 2026 on the cybersecurity track. I like building things end-to-end — from a Flask API and a PostgreSQL schema to the interface someone actually clicks.</p>
-          <p>What I care about most is how software <b>feels</b> to use: layout that reads clearly, pages that load fast, and interfaces that work for everyone. Lately I've been going deeper on <b>front-end craft, performance, and accessibility</b> — and I use modern AI dev tools daily to move faster without cutting corners.</p>
+          <p>I'm a <b>Computer Science student at UMBC</b>, graduating in December 2026 on the <b>cybersecurity track</b>. I work across two sides of the same craft: building full-stack web apps end-to-end, and writing <b>security tooling</b> — from log threat analysis to file-integrity monitoring and Linux permission auditing.</p>
+          <p>What ties it together is caring about how software behaves under the hood <em>and</em> how it feels to use: code that's secure and correct, pages that load fast, and interfaces that work for everyone. I use modern AI dev tools daily to move faster without cutting corners.</p>
           <p>I do my best work on small, collaborative teams where I can own a problem end-to-end and see it through to something people actually use.</p>
         </div>
         <div class="facts">
           <div class="row"><span class="k">Based in</span><span class="v">Maryland · Remote-ready</span></div>
-          <div class="row"><span class="k">Focus</span><span class="v">Front-end · Full-stack</span></div>
+          <div class="row"><span class="k">Focus</span><span class="v">Full-stack · Security</span></div>
           <div class="row"><span class="k">Education</span><span class="v">B.S. CS, UMBC (2026)</span></div>
           <div class="row"><span class="k">Currently</span><span class="v">Open to roles</span></div>
         </div>
@@ -381,14 +387,14 @@
       <div class="reveal"><div class="eyebrow">Skills</div>
       <h2 class="sec-title">The tools I reach for.</h2></div>
       <div class="skill-grid reveal">
-        <div class="skill-col"><h4>Front-end</h4><ul>
+        <div class="skill-col"><h4>Front-End</h4><ul>
           <li>JavaScript (ES6+)</li><li>HTML5 &amp; semantic markup</li><li>CSS3 · Flexbox · Grid</li><li>Responsive design</li><li>Accessibility (a11y)</li></ul></div>
-        <div class="skill-col"><h4>Back-end</h4><ul>
-          <li>Node.js</li><li>Flask · Python</li><li>REST APIs</li><li>PostgreSQL · SQL</li><li>Authentication &amp; RBAC</li></ul></div>
-        <div class="skill-col"><h4>Languages</h4><ul>
-          <li>JavaScript</li><li>Python</li><li>Java</li><li>C / C++</li><li>SQL</li></ul></div>
-        <div class="skill-col"><h4>Tooling</h4><ul>
-          <li>Git &amp; GitHub</li><li>Docker</li><li>Linux / CLI</li><li>Agile / SCRUM</li><li>AI dev tools</li></ul></div>
+        <div class="skill-col"><h4>Back-End</h4><ul>
+          <li>Node.js · Flask</li><li>Python</li><li>REST APIs</li><li>PostgreSQL · SQL</li><li>Auth &amp; RBAC</li></ul></div>
+        <div class="skill-col"><h4>Security</h4><ul>
+          <li>Log &amp; threat analysis</li><li>File integrity (SHA-256)</li><li>Linux permission auditing</li><li>Packet / traffic analysis</li><li>Secure development</li></ul></div>
+        <div class="skill-col"><h4>Languages &amp; Tools</h4><ul>
+          <li>JavaScript · Python</li><li>Java · C / C++</li><li>Git · Docker · Linux</li><li>Agile / SCRUM</li><li>AI dev tools</li></ul></div>
       </div>
     </div>
   </section>
