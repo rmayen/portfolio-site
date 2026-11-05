@@ -289,9 +289,9 @@
       </div>
       <dl class="facts reveal">
         <div class="fact"><dt>Education</dt><dd>B.S. Computer Science, UMBC</dd></div>
-        <div class="fact"><dt>Focus</dt><dd>Full stack, backend, systems</dd></div>
-        <div class="fact"><dt>Location</dt><dd>Baltimore, MD</dd></div>
-        <div class="fact"><dt>Status</dt><dd>Open to software engineering opportunities</dd></div>
+        <div class="fact"><dt>Focus</dt><dd>Full stack, backend, cybersecurity</dd></div>
+        <div class="fact"><dt>Location</dt><dd>Germantown, MD</dd></div>
+        <div class="fact"><dt>Status</dt><dd>Open to full-stack software and cybersecurity roles</dd></div>
       </dl>
     </div>
   </section>
@@ -304,16 +304,22 @@
       </div>
       <div class="projects">
         <article class="card reveal">
-          <h3>jobq</h3>
-          <p>Persistent job queue on SQLite with priorities, backoff retries, dead letters, cron schedules, and lease-based crash recovery.</p>
-          <div class="tags"><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">SQLite</span></div>
-          <a class="link" href="https://github.com/rmayen/jobq" target="_blank" rel="noopener">View on GitHub →</a>
+          <h3>cerberus</h3>
+          <p>Defensive malware-analysis platform: analysis jobs run in separate child processes, a PostgreSQL worker queue uses lease-based crash recovery, and timeouts send SIGTERM and then SIGKILL to the process group.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span></div>
+          <a class="link" href="https://github.com/rmayen/cerberus" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
         <article class="card reveal">
-          <h3>docqa</h3>
-          <p>Document Q&amp;A service with cited answers, hybrid BM25 and embedding retrieval, swappable LLM backends, and an evaluation harness in CI.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Claude API</span></div>
-          <a class="link" href="https://github.com/rmayen/docqa" target="_blank" rel="noopener">View on GitHub →</a>
+          <h3>halotrace</h3>
+          <p>Defensive security platform that ingests Linux SSH auth logs, detects brute-force and password-spray attacks, correlates alerts into incidents, and provides an analyst triage dashboard.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLite</span></div>
+          <a class="link" href="https://github.com/rmayen/halotrace" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card reveal">
+          <h3>sentinel</h3>
+          <p>Self-hosted uptime and HTTP security-header monitor with a zero-dependency Node.js backend, SQLite storage, and a web dashboard.</p>
+          <div class="tags"><span class="tag">Node.js</span><span class="tag">SQLite</span><span class="tag">Security</span></div>
+          <a class="link" href="https://github.com/rmayen/sentinel" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
         <article class="card reveal">
           <h3>boardly</h3>
@@ -328,6 +334,18 @@
           <a class="link" href="https://github.com/rmayen/ticketdesk" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
         <article class="card reveal">
+          <h3>jobq</h3>
+          <p>Persistent job queue on SQLite with priorities, backoff retries, dead letters, cron schedules, and lease-based crash recovery.</p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">SQLite</span></div>
+          <a class="link" href="https://github.com/rmayen/jobq" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card reveal">
+          <h3>docqa</h3>
+          <p>Document Q&amp;A service with cited answers, hybrid BM25 and embedding retrieval, swappable LLM backends, and an evaluation harness in CI.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Claude API</span></div>
+          <a class="link" href="https://github.com/rmayen/docqa" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card reveal">
           <h3>ledgerkit</h3>
           <p>Double-entry ledger API with balanced entries, idempotent transfers, overdraft protection, and reconciliation.</p>
           <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLite</span></div>
@@ -338,6 +356,12 @@
           <p>Defensive auth-log analyzer that flags brute force, password spraying, and credential stuffing patterns.</p>
           <div class="tags"><span class="tag">Node.js</span><span class="tag">Security</span></div>
           <a class="link" href="https://github.com/rmayen/log-threat-analyzer" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card reveal">
+          <h3>file-integrity-monitor</h3>
+          <p>Defensive SHA-256 CLI that baselines directory trees and reports modified, added, and deleted files.</p>
+          <div class="tags"><span class="tag">Node.js</span><span class="tag">Security</span></div>
+          <a class="link" href="https://github.com/rmayen/file-integrity-monitor" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
       </div>
     </div>
@@ -375,7 +399,7 @@
       <div class="contact reveal">
         <div class="section-title">Contact</div>
         <h2>Let's build something.</h2>
-        <p>I welcome opportunities in software engineering, research collaboration, and open-source work.</p>
+        <p>I am open to full-stack software engineering and cybersecurity roles, and to open-source work.</p>
         <div class="actions" style="justify-content:center">
           <a href="mailto:rmayen1@umbc.edu" class="btn primary">Email me</a>
           <a href="https://www.linkedin.com/in/rene-mayen-cs" class="btn" target="_blank" rel="noopener">LinkedIn</a>
@@ -387,7 +411,7 @@
   <footer>
     <div class="wrap">
       <span>© 2026 Rene Mayen</span>
-      <span>Baltimore, MD</span>
+      <span>Germantown, MD</span>
     </div>
   </footer>
 
